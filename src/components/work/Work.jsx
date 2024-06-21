@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 import "./Work.css";
 import Project from "../utils/project/Project";
-import uuid from 'uuid/package.json';
 
 export class Work extends Component {
   state = {
     projects: [
 
       {
-        id: uuid(),
+        id: uuidv4(),
         title: "Title",
         description: "Description Here",
         github: "https://github.com/dfiredeveloper",
@@ -19,7 +19,7 @@ export class Work extends Component {
       },
 
       {
-        id: uuid(),
+        id: uuidv4(),
         title: "Title",
         description: "Description Here",
         github: "https://github.com/dfiredeveloper",
@@ -29,7 +29,7 @@ export class Work extends Component {
       },
 
       {
-        id: uuid(),
+        id: uuidv4(),
         title: "Title",
         description: "Description Here",
         github: "https://github.com/dfiredeveloper",
@@ -39,7 +39,7 @@ export class Work extends Component {
       },
 
       {
-        id: uuid(),
+        id: uuidv4(),
         title: "Title",
         description: "Description Here",
         github: "https://github.com/dfiredeveloper",
@@ -49,7 +49,7 @@ export class Work extends Component {
       },
 
       {
-        id: uuid(),
+        id: uuidv4(),
         title: "Title",
         description: "Description Here",
         github: "https://github.com/dfiredeveloper",
@@ -59,7 +59,7 @@ export class Work extends Component {
       },
 
       {
-        id: uuid(),
+        id: uuidv4(),
         title: "Title",
         description: "Mobile App landing page",
         github: "https://github.com/dfiredeveloper",
