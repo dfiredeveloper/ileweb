@@ -1,4 +1,3 @@
-// import React from 'react'
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -13,33 +12,20 @@ import Error from "./components/error404/Error";
 export class App extends Component {
   state = {
     menu: ["active_menu", "", ""],
+    fullScreen: false,
   };
 
   activeMenu(id) {
-    switch (id) {
-      case 0:
-        this.setState({ menu: ["active_menu", "", ""] });
-        break;
-
-      case 1:
-        this.setState({ menu: ["", "active_menu", ""] });
-        break;
-
-      case 2:
-        this.setState({ menu: ["", "", "active_menu"] });
-        break;
-
-      default:
-        break;
-    }
+    const newMenu = ["", "", ""];
+    newMenu[id] = "active_menu";
+    this.setState({ menu: newMenu });
   }
 
   setFullscreen(value) {
-    this.setState({...this.state, fullScreen: value})
+    this.setState({ fullScreen: value });
   }
 
   render() {
-
     return (
       <div className='App'>
         <Router>
@@ -48,48 +34,27 @@ export class App extends Component {
             <div>
               <Routes>
                 <Route
-                  exact
                   path='/'
-                  render={(props) => <Mobile menu={this.state.menu} fullScreen={this.setFullscreen.bind(this)} />}
+                  element={<Mobile menu={this.state.menu} fullScreen={this.setFullscreen.bind(this)} />}
                 />
-
                 <Route
-                  exact
                   path='/work'
-                  render={(props) => (
-                    <Work
-                      menu={this.state.menu}
-                      activeMenu={this.activeMenu.bind(this)}
-                    />
-                  )}
+                  element={<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                 />
-
                 <Route
-                  exact
                   path='/resume'
-                  render={(props) => (
-                    <Resume
-                      menu={this.state.menu}
-                      activeMenu={this.activeMenu.bind(this)}
-                    />
-                  )}
+                  element={<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                 />
-
                 <Route
-                  exact
                   path='/contact'
-                  render={(props) => (
-                    <Contact
-                      menu={this.state.menu}
-                      activeMenu={this.activeMenu.bind(this)}
-                    />
-                  )}
+                  element={<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                 />
-
-                <Route component={Error} />
+                <Route
+                  path='*'
+                  element={<Error />}
+                />
               </Routes>
             </div>
-
             <div className='social_buttons'>
               <a
                 href='https://github.com/dfiredeveloper'
@@ -112,7 +77,6 @@ export class App extends Component {
               >
                 <i className='fab fa-linkedin'></i>
               </a>
-
               <div className='credits'>
                 <p>
                   Inspired by
@@ -127,60 +91,33 @@ export class App extends Component {
               </div>
             </div>
           </div>
-
           <div className='container'>
             <div className='fixed'>
               <Base menu={this.state.menu} />
             </div>
-
             <div className='main'>
               <div className='pages_container'>
                 <Routes>
                   <Route
-                    exact
                     path='/'
-                    render={(props) => (
-                      <Work
-                        menu={this.state.menu}
-                        activeMenu={this.activeMenu.bind(this)}
-                      />
-                    )}
+                    element={<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                   />
-
                   <Route
-                    exact
                     path='/work'
-                    render={(props) => (
-                      <Work
-                        menu={this.state.menu}
-                        activeMenu={this.activeMenu.bind(this)}
-                      />
-                    )}
+                    element={<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                   />
-
                   <Route
-                    exact
                     path='/resume'
-                    render={(props) => (
-                      <Resume
-                        menu={this.state.menu}
-                        activeMenu={this.activeMenu.bind(this)}
-                      />
-                    )}
+                    element={<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                   />
-
                   <Route
-                    exact
                     path='/contact'
-                    render={(props) => (
-                      <Contact
-                        menu={this.state.menu}
-                        activeMenu={this.activeMenu.bind(this)}
-                      />
-                    )}
+                    element={<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />}
                   />
-
-                  <Route component={Error} />
+                  <Route
+                    path='*'
+                    element={<Error />}
+                  />
                 </Routes>
               </div>
             </div>
