@@ -1,7 +1,6 @@
 // import React from 'react'
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Switch } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Base from "./components/base/Base";
 import Work from "./components/work/Work";
@@ -47,7 +46,7 @@ export class App extends Component {
           <div className='mobile_container' id={this.state.fullScreen ? "fullscreen" : ''}>
             <Header />
             <div>
-              <Switch>
+              <Routes>
                 <Route
                   exact
                   path='/'
@@ -88,26 +87,26 @@ export class App extends Component {
                 />
 
                 <Route component={Error} />
-              </Switch>
+              </Routes>
             </div>
 
             <div className='social_buttons'>
               <a
-                href='https://github.com/kadetXx'
+                href='https://github.com/dfiredeveloper'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <i className='fab fa-github'></i>
               </a>
               <a
-                href='https://twitter.com/kadetXx'
+                href='https://twitter.com/dfiredeveloper'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <i className='fab fa-twitter'></i>
               </a>
               <a
-                href='https://www.linkedin.com/in/collins-enebeli-online/'
+                href='https://www.linkedin.com/in/samuelachimugu?originalSubdomain=ng'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -136,7 +135,7 @@ export class App extends Component {
 
             <div className='main'>
               <div className='pages_container'>
-                <Switch>
+                <Routes>
                   <Route
                     exact
                     path='/'
@@ -182,7 +181,7 @@ export class App extends Component {
                   />
 
                   <Route component={Error} />
-                </Switch>
+                </Routes>
               </div>
             </div>
           </div>
