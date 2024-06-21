@@ -185,14 +185,14 @@ export class Resume extends Component {
         </div>
 
         <div className="go_button_container">
-          <Link to="/contact">
-            <button>
-              <span class="material-icons">arrow_left</span> Contact
-            </button>
-          </Link>
           <Link to="/">
             <button>
-              Home <span class="material-icons">arrow_right</span>{" "}
+              <span class="material-icons">arrow_left</span> Home
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button>
+              Contact <span class="material-icons">arrow_right</span>{" "}
             </button>
           </Link>
         </div>
