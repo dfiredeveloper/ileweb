@@ -89,9 +89,9 @@ export class Work extends Component {
               <span class='material-icons'>arrow_left</span> Home
             </button>
           </Link>
-          <Link to='/contact'>
+          <Link to='/resume'>
             <button>
-              Contact <span class='material-icons'>arrow_right</span>
+              Resume <span class='material-icons'>arrow_right</span>
             </button>
           </Link>
         </div>
