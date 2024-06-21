@@ -19,7 +19,7 @@ export class Form extends Component {
 
     return (
       <div>
-        <form name="contact" method="post" action="https://formspree.io/xqkyjgjr" onSubmit={this.submitForm} >
+        <form name="contact" method="post" action="https://formspree.io/f/xldrrdzv" onSubmit={this.submitForm} >
           <input type="hidden" name="form-name" value="contact" />
           <div className="form_section">
             <label>
