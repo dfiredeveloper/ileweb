@@ -77,18 +77,7 @@ export class App extends Component {
               >
                 <i className='fab fa-linkedin'></i>
               </a>
-              <div className='credits'>
-                <p>
-                  Inspired by
-                  <a
-                    href='https://sarahdayan.dev/'
-                    target='_blank'
-                    rel='noreferrer noopener'
-                  >
-                    Sarah Dayan 
-                  </a> 
-                </p>
-              </div>
+              
             </div>
           </div>
           <div className='container'>
