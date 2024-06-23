@@ -23,7 +23,7 @@ export class Base extends Component {
           <div className='description'>
             <p>
               <span>
-                I'm a <span className='highlight'>frontend developer</span>. I create interactive <span className="highlight two">experiences</span> for amazing people using <span className="highlight">technology</span>. I enjoy tweaking <span className="highlight two">stylesheets</span> and crafting <span className="highlight">layouts</span> to achieve <span className="highlight two">desired</span> aesthetics.
+                A <span className='highlight'>leading software developer</span> renowned for unparalleled <span className="highlight two">expertise</span> in creating cutting-edge <span className="highlight">web and mobile applications.</span> I enjoy tweaking <span className="highlight two">stylesheets</span> and crafting <span className="highlight">layouts</span> to achieve <span className="highlight two">desired</span> aesthetics.
               </span>
             </p>
           </div>
@@ -88,19 +88,6 @@ export class Base extends Component {
               <i className='fab fa-twitter'></i> Twitter{" "}
               <img src={arrow} alt='pointer' />
             </a>
-          </div>
-
-          <div className='credits'>
-            <p>
-              Inspired by
-              <a
-                href='https://sarahdayan.dev/'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                Sarah Dayan
-              </a>
-            </p>
           </div>
         </div>
       </div>

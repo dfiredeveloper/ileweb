@@ -100,7 +100,8 @@
   }
 
   .other_projects .box {
-    padding: 25px;
+    padding: 45px;
+    height: 150px;
   }
 
   .other_projects .project_details h3 {

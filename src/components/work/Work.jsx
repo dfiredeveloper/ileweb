@@ -61,6 +61,24 @@ export class Work extends Component {
         stack: "Sass + Javsacript + PHP",
         isPrivate: false,
       }, 
+      {
+        id: uuidv4(),
+        title: "Title 6",
+        description: "Mobile App landing page",
+        github: "https://github.com/dfiredeveloper/project6",
+        live: "https://github.com/dfiredeveloper/project6",
+        stack: "Sass + Javsacript + PHP",
+        isPrivate: false,
+      },
+      {
+        id: uuidv4(),
+        title: "Title 6",
+        description: "Mobile App landing page",
+        github: "https://github.com/dfiredeveloper/project6",
+        live: "https://github.com/dfiredeveloper/project6",
+        stack: "Sass + Javsacript + PHP",
+        isPrivate: false,
+      },
     ],
   };
 
