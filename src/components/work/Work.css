@@ -1,40 +1,122 @@
 .work {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.work .portfolio_showcase,
+.other_projects .portfolio_showcase {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.work .go_button_container {
+  display: none;
+}
+
+@media (max-width: 993px) {
+  .work {
+    margin: 30px 0;
   }
-  
+
   .work .go_button_container {
-    display: none;
-  }
-  
-  .work .portfolio_showcase {
     display: flex;
-    flex-wrap: wrap;
+  }
+}
+
+.title {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 1rem 0;
+  font-size: var(--xsmall-font);
+  color: #777778;
+  font-family: "air-semibold";
+}
+
+/* Style for the gap between sections */
+.gap {
+  height: 20px; /* Adjust height as needed */
+}
+
+/* Project.jsx styles */
+.box_container {
+  width: 49%;
+  background-color: #16161a;
+  margin: 0.5%;
+  position: relative;
+}
+
+.box {
+  padding: 35px;
+}
+
+.box_container:hover {
+  transform: scale(1.02);
+}
+
+.box .project_details h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.box .project_details p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #777778;
+  font-family: 'air-light';
+}
+
+.box .project_details small {
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: grey;
+}
+
+.box .project_links a {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: grey;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.box .project_links a i {
+  margin-right: 2px;
+}
+
+@media (max-width: 993px) {
+  .box_container {
     width: 100%;
+    margin: 0.5% 0;
   }
-  
-  .work .go_button_container {
-    display: none;
-  }
-  
-  
-  @media (max-width: 993px) {
-    .work {
-      margin: 30px 0px;
-    }
-  
-    .work .go_button_container {
-      display: flex;
-    }
-  }
-  .title {
+}
+
+@media (min-width: 994px) {
+  .box_container.list_mode {
     width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin: 1rem 0;
-    font-size: var(--xsmall-font);
-    color: #777778;
-    font-family: "air-semibold";
+    margin: 0.5% 0;
   }
-  
+
+  .other_projects .box {
+    padding: 25px;
+  }
+
+  .other_projects .project_details h3 {
+    font-size: 1.2rem;
+  }
+
+  .other_projects .project_details p {
+    font-size: 1rem;
+  }
+
+  .other_projects .project_details small {
+    font-size: 0.9rem;
+  }
+
+  .other_projects .project_links a {
+    font-size: 0.9rem;
+    margin-right: 12px;
+  }
+}
