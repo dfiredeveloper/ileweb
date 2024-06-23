@@ -46,13 +46,13 @@
 @media (max-width: 993px) {
   .box_container {
     width: 100%; /* Full width on smaller screens */
-    margin: 0.5% 0; /* Adjust margin as needed */
+    margin: 3% 0; /* Adjust margin between boxes on mobile */
   }
 }
 
 @media (min-width: 994px) {
   .box_container.list_mode {
     width: 100%; /* Full width in list mode on desktop */
-    margin: 0.5% 0; /* Adjust margin as needed */
+    margin: 0.7% 0; /* Adjust margin between boxes in list mode */
   }
 }
