@@ -7,63 +7,57 @@ import Project from "../utils/project/Project";
 export class Work extends Component {
   state = {
     projects: [
-
       {
         id: uuidv4(),
-        title: "Title",
-        description: "Description Here",
-        github: "https://github.com/dfiredeveloper",
-        live: "https://github.com/dfiredeveloper",
+        title: "Title 1",
+        description: "Description for project 1",
+        github: "https://github.com/dfiredeveloper/project1",
+        live: "https://github.com/dfiredeveloper/project1",
         stack: "React + Styled Components",
         isPrivate: false,
       },
-
       {
         id: uuidv4(),
-        title: "Title",
-        description: "Description Here",
-        github: "https://github.com/dfiredeveloper",
-        live: "https://github.com/dfiredeveloper",
+        title: "Title 2",
+        description: "Description for project 2",
+        github: "https://github.com/dfiredeveloper/project2",
+        live: "https://github.com/dfiredeveloper/project2",
         stack: "Vue + Socket.io + Express",
         isPrivate: false,
       },
-
       {
         id: uuidv4(),
-        title: "Title",
-        description: "Description Here",
-        github: "https://github.com/dfiredeveloper",
-        live: "https://github.com/dfiredeveloper",
+        title: "Title 3",
+        description: "Description for project 3",
+        github: "https://github.com/dfiredeveloper/project3",
+        live: "https://github.com/dfiredeveloper/project3",
         stack: "React",
         isPrivate: false,
       },
-
       {
         id: uuidv4(),
-        title: "Title",
-        description: "Description Here",
-        github: "https://github.com/dfiredeveloper",
-        live: "https://github.com/dfiredeveloper",
+        title: "Title 4",
+        description: "Description for project 4",
+        github: "https://github.com/dfiredeveloper/project4",
+        live: "https://github.com/dfiredeveloper/project4",
         stack: "React + SASS",
         isPrivate: false,
       },
-
       {
         id: uuidv4(),
-        title: "Title",
-        description: "Description Here",
-        github: "https://github.com/dfiredeveloper",
-        live: "https://github.com/dfiredeveloper",
+        title: "Title 5",
+        description: "Description for project 5",
+        github: "https://github.com/dfiredeveloper/project5",
+        live: "https://github.com/dfiredeveloper/project5",
         stack: "React",
         isPrivate: false,
       },
-
       {
         id: uuidv4(),
-        title: "Title",
+        title: "Title 6",
         description: "Mobile App landing page",
-        github: "https://github.com/dfiredeveloper",
-        live: "https://github.com/dfiredeveloper",
+        github: "https://github.com/dfiredeveloper/project6",
+        live: "https://github.com/dfiredeveloper/project6",
         stack: "Sass + Javsacript + PHP",
         isPrivate: false,
       }, 
@@ -75,12 +69,28 @@ export class Work extends Component {
   }
 
   render() {
+    // Separate projects into most recent (first two) and other projects (rest)
+    const mostRecentProjects = this.state.projects.slice(0, 2);
+    const otherProjects = this.state.projects.slice(2);
+
     return (
       <div className='work'>
-        <div className='portfolio_showcase'>
-          {this.state.projects.map((project) => (
-            <Project key={project.id} data={project} />
-          ))}
+        <div className='portfolio_showcase portfolio_showcase_full'>
+          <h2 className="title">MOST RECENT</h2>
+          <div className='portfolio_showcase'>
+            {mostRecentProjects.map((project) => (
+              <Project key={project.id} data={project} />
+            ))}
+          </div>
+        </div>
+
+        <div className='other_projects'>
+          <h2 className="title">OTHER PROJECTS</h2>
+          <div className='portfolio_showcase'>
+            {otherProjects.map((project) => (
+              <Project key={project.id} data={project} />
+            ))}
+          </div>
         </div>
 
         <div className='go_button_container'>
