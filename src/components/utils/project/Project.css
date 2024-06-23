@@ -10,7 +10,7 @@
 }
 
 .box_container:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .box .project_details h3 {
