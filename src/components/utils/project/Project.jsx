@@ -14,7 +14,7 @@ export class Project extends Component {
             <small>{stack}</small>
             <p>{description}</p>
           </div>
-          
+          <br />
           <div className="project_links">
             <small><a href={live} target='_blank' rel="noopener noreferrer"><i className="far fa-eye"></i> Live</a></small>
             
