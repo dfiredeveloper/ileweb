@@ -69,17 +69,15 @@ export class Work extends Component {
   }
 
   render() {
-    // Separate projects into most recent (first two) and other projects (rest)
-    const mostRecentProjects = this.state.projects.slice(0, 2);
-    const otherProjects = this.state.projects.slice(2);
+    const { projects } = this.state;
 
     return (
       <div className='work'>
         <div className='portfolio_showcase portfolio_showcase_full'>
           <h2 className="title">MOST RECENT</h2>
           <div className='portfolio_showcase'>
-            {mostRecentProjects.map((project) => (
-              <Project key={project.id} data={project} />
+            {projects.slice(0, 2).map((project) => (
+              <Project key={project.id} data={project} listMode />
             ))}
           </div>
         </div>
@@ -87,7 +85,7 @@ export class Work extends Component {
         <div className='other_projects'>
           <h2 className="title">OTHER PROJECTS</h2>
           <div className='portfolio_showcase'>
-            {otherProjects.map((project) => (
+            {projects.slice(2).map((project) => (
               <Project key={project.id} data={project} />
             ))}
           </div>
@@ -96,12 +94,12 @@ export class Work extends Component {
         <div className='go_button_container'>
           <Link to='/'>
             <button>
-              <span class='material-icons'>arrow_left</span> Home
+              <span className='material-icons'>arrow_left</span> Home
             </button>
           </Link>
           <Link to='/resume'>
             <button>
-              Resume <span class='material-icons'>arrow_right</span>
+              Resume <span className='material-icons'>arrow_right</span>
             </button>
           </Link>
         </div>
