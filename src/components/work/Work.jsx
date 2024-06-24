@@ -69,22 +69,22 @@ export class Work extends Component {
       }, 
       {
         id: uuidv4(),
-        title: "Title 6",
-        description: "Mobile App landing page",
+        title: "Wavio",
+        description: "Eco-friendly, and Professional Digital Business Cards",
         github: "https://github.com/dfiredeveloper/project6",
-        live: "https://github.com/dfiredeveloper/project6",
-        stack: "Sass + Javsacript + PHP",
-        isPrivate: false,
+        live: "https://wavio.ng",
+        stack: "Laravel + Javsacript + PHP",
+        isPrivate: true,
         showLive: true,
       },
       {
         id: uuidv4(),
-        title: "Title 6",
-        description: "Mobile App landing page",
+        title: "KogiJobs",
+        description: "Kogi state indigenous job searching portal and platform.",
         github: "https://github.com/dfiredeveloper/project6",
-        live: "https://github.com/dfiredeveloper/project6",
-        stack: "Sass + Javsacript + PHP",
-        isPrivate: false,
+        live: "https://kogijobs.com.ng",
+        stack: "Laravel + Javsacript + PHP + MySQL",
+        isPrivate: true,
         showLive: true,
       },
     ],
@@ -110,7 +110,7 @@ export class Work extends Component {
 
         <div className='gap'></div> {/* Add a gap between sections */}
 
-        <div className='other_projects'>
+        <div className='portfolio_showcase'>
           <h2 className="title">OTHER PROJECTS</h2>
           <div className='portfolio_showcase'>
             {projects.slice(2).map((project) => (
