@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Mobile from "./components/base/Mobile";
 import Header from "./components/utils/header/Header";
 import Error from "./components/error404/Error";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export class App extends Component {
   state = {
