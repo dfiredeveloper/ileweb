@@ -3,7 +3,7 @@ import './Project.css';
 
 export class Project extends Component {
   render() {
-    const { title, description, github, live, stack, isPrivate } = this.props.data;
+    const { title, description, github, live, stack, isPrivate, showLive } = this.props.data;
     const { listMode } = this.props;
 
     return (
@@ -16,10 +16,19 @@ export class Project extends Component {
           </div>
           <br />
           <div className="project_links">
-            <small><a href={live} target='_blank' rel="noopener noreferrer"><i className="far fa-eye"></i> Live</a></small>
-            
+            {showLive && (
+              <small>
+                <a href={live} target='_blank' rel="noopener noreferrer">
+                  <i className="far fa-eye"></i> Live
+                </a>
+              </small>
+            )}
             {!isPrivate && (
-              <small><a href={github} target='_blank' rel="noopener noreferrer"><i className="fas fa-code-branch"></i> Code</a></small>
+              <small>
+                <a href={github} target='_blank' rel="noopener noreferrer">
+                  <i className="fas fa-code-branch"></i> Code
+                </a>
+              </small>
             )}
           </div>
         </div>
