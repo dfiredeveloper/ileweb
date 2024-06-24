@@ -9,21 +9,21 @@ export class Work extends Component {
     projects: [
       {
         id: uuidv4(),
-        title: "Title 1",
-        description: "Description for project 1",
+        title: "Stasha",
+        description: "Stasha is a blockchain ecosystem that aims to revolutionize the world of decentralized finance (DeFi) and digital assets.",
         github: "https://github.com/dfiredeveloper/project1",
-        live: "https://github.com/dfiredeveloper/project1",
+        live: "https://stasha.io",
         stack: "React + Styled Components",
-        isPrivate: false,
+        isPrivate: true,
       },
       {
         id: uuidv4(),
-        title: "Title 2",
+        title: "PayDex",
         description: "Description for project 2",
         github: "https://github.com/dfiredeveloper/project2",
         live: "https://github.com/dfiredeveloper/project2",
         stack: "Vue + Socket.io + Express",
-        isPrivate: false,
+        isPrivate: true,
       },
       {
         id: uuidv4(),
