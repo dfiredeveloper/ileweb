@@ -83,9 +83,9 @@ export class Resume extends Component {
 
           <div className="summary">
             <p>
-              I’m a software developer, passionate about transforming
-              ideas from pixels to scalable products. I create functional
-              applications with user experience as top priority.
+            I'm a passionate software developer with extensive experience in blockchain, health, and financial technologies, I excel in crafting robust web and mobile applications. My passion lies in translating conceptual ideas into scalable products that prioritize exceptional user experiences.
+
+
             </p>
           </div>
 
