@@ -65,7 +65,7 @@ export class App extends Component {
                 <i className='fab fa-github'></i>
               </a>
               <a
-                href='https://twitter.com/dfiredeveloper'
+                href='https://twitter.com/ileachimugu'
                 target='_blank'
                 rel='noopener noreferrer'
               >
