@@ -10,26 +10,26 @@ export class Resume extends Component {
   render() {
     const experience = [
       {
-        company: "Project 1",
-        position: "Frontend Developer",
-        started: "September 2020",
-        ended: "Feburary 2021",
+        company: "Lems Technologies",
+        position: "CEO/CTO",
+        started: "Feb 2021",
+        ended: "Present",
         description:
-          "I Joined the Project 1 engineering team in building an online gaming community.",
+          "I Joined the engineering team in building numerous applications for clients.",
         achievements: [
-          "Worked with React and SASS to build components from scratch",
-          "Handled complex state management using react hooks",
-          "Worked closely with a senior dev to integrate graphQL and typescript.",
+          "launched 3 products under my management",
+          "Oversea the the development of more than 10 web3 / mobile apps for client",
+          "Effective team collaboration and mentorship to drive project success",
         ],
       },
 
       {
-        company: "Project 2",
-        position: "Frontend Developer [Contract]",
-        started: "October 2020",
-        ended: "March 2021",
+        company: "J-Pipsicles",
+        position: "Software Developer [Contract]",
+        started: "September 2020",
+        ended: "August 2021",
         description:
-          "I worked with the Project 2 product team on a contract basis to build a web application for a fintech startup",
+          "I worked with the Project 2 product team on a contract basis to build a web application for an investment startup",
         achievements: [
           "Transformed figma prototypes to functional UIs using react js, react context and sass",
           "Made use of tools like Notion & Usepastel for task management and feedback",
@@ -38,15 +38,15 @@ export class Resume extends Component {
       },
 
       {
-        company: "HNG Internships",
-        position: "Frontend Developer [Intern]",
-        started: "May 2020",
-        ended: "August 2020",
+        company: "Investnaira",
+        position: "Frontend Developer",
+        started: "Feb 2018",
+        ended: "Nov 2019",
         description:
-          "I contributed in developing user interfaces for quite a number of products within three months while learning new skills",
+          "I contributed in developing user interfaces for quite a number of products within three months.",
         achievements: [
-          "Worked with node.js developers to build a certificate generator",
-          "Headed the frontend department of my team to deliver responsive web templates to be sold on envato market",
+          "Worked with node.js developers to build a the core admin dashboard",
+          "Headed the frontend department of my team to revamp the complete user application for version 2 launch",
           "Built an open source micro API project alongside python (Django) Developers using Jinja template engine on the frontend",
         ],
       },
@@ -79,7 +79,7 @@ export class Resume extends Component {
             </div>
           </div>
 
-          <p className="subheading">Frontend Developer</p>
+          <p className="subheading">Software Developer</p>
 
           <div className="summary">
             <p>
