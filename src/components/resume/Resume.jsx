@@ -68,7 +68,7 @@ export class Resume extends Component {
                 </small>
               </a>
               <a
-                href="https://drive.google.com/file/d/"
+                href="https://drive.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
