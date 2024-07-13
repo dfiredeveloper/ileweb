@@ -108,7 +108,7 @@ export class Work extends Component {
           </div>
         </div>
 
-        <div className='gap'></div> {/* Add a gap between sections */}
+        <div className='gap'></div> 
 
         <div className='portfolio_showcase'>
           <h2 className="title">OTHER PROJECTS</h2>
