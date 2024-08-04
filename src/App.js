@@ -72,7 +72,7 @@ export class App extends Component {
                 <i className='fab fa-twitter'></i>
               </a>
               <a
-                href='https://www.linkedin.com/in/samuelachimugu?originalSubdomain=ng'
+                href='https://www.linkedin.com/in/dfiredeveloper'
                 target='_blank'
                 rel='noopener noreferrer'
               >
