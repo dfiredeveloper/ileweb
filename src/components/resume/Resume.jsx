@@ -59,7 +59,7 @@ export class Resume extends Component {
             <h2>Ilemona Achimugu</h2>
             <div className="buttons">
               <a
-                href="https://ng.linkedin.com/in/samuelachimugu"
+                href="https://ng.linkedin.com/in/dfiredeveloper"
                 target="_blank"
                 rel="noopener noreferrer"
               >
